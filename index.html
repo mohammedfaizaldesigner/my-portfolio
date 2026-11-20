@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohammed Faizal – Graphic & Visual Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eceff4;--card:#fff;--ink:#101828;--mute:#566074;--line:#d5dae3;--y:#ffd21f;--b:#2547f5;--on-y:#101828;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1017;--card:#171b25;--ink:#eef0f5;--mute:#9aa3b5;--line:#2a3040;--b:#7d93ff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1017;--card:#171b25;--ink:#eef0f5;--mute:#9aa3b5;--line:#2a3040;--b:#7d93ff;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--b);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h2{font-size:clamp(32px,5vw,56px);font-weight:800;margin-bottom:12px}
+.lead{color:var(--mute);max-width:56ch;margin:0 0 36px}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:var(--b);z-index:60}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:55}
+nav{display:flex;align-items:center;gap:6px;height:64px}
+.logo{font:800 20px "Bricolage Grotesque",sans-serif;text-decoration:none;margin-right:auto;display:flex;align-items:center;gap:10px}
+.logo b{background:var(--y);color:var(--on-y);padding:2px 8px;border-radius:8px}
+nav a.l{padding:8px 12px;border-radius:99px;text-decoration:none;font-weight:500;font-size:15px;color:var(--mute)}
+nav a.l:hover,nav a.l.on{background:var(--y);color:var(--on-y)}
+.btn{display:inline-block;border:2px solid var(--ink);background:var(--ink);color:var(--bg);padding:12px 22px;border-radius:99px;font:700 16px "DM Sans",sans-serif;text-decoration:none;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink)}
+.btn:hover{background:var(--y);color:var(--on-y);border-color:var(--y)}
+.ic{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-size:18px}
+#menu{display:none}
+@media(max-width:860px){nav a.l{display:none}#menu{display:block}nav.open a.l{display:block;position:absolute;left:0;right:0;background:var(--bg);border-radius:0;padding:14px 22px;border-bottom:1px solid var(--line)}}
+#hero{padding:56px 0 40px}
+.hg{display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center}
+@media(max-width:860px){.hg{grid-template-columns:1fr}}
+h1{font-size:clamp(52px,9.5vw,128px);font-weight:800}
+.role{display:inline-block;background:var(--y);color:var(--on-y);font-weight:700;padding:6px 14px;border-radius:10px;margin:22px 0 14px;transform:rotate(-1.5deg)}
+.hero p{max-width:50ch;color:var(--mute);font-size:19px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.photo{position:relative}
+.photo img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:220px 220px 28px 28px;display:block}
+.photo::after{content:"";position:absolute;inset:18px -14px -14px 18px;border:3px solid var(--y);border-radius:220px 220px 28px 28px;z-index:-1}
+.stats{display:flex;gap:36px;flex-wrap:wrap;margin-top:34px}
+.stats b{font:800 38px "Bricolage Grotesque",sans-serif;display:block}.stats span{color:var(--mute);font-size:14px}
+.mq{overflow:hidden;border-block:1px solid var(--line);background:var(--card);padding:16px 0;margin-top:40px}
+.mq div{display:flex;gap:44px;width:max-content;animation:m 30s linear infinite;font:800 24px "Bricolage Grotesque",sans-serif}
+@keyframes m{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.mq div{animation:none}html{scroll-behavior:auto}}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:40px}@media(max-width:860px){.ag{grid-template-columns:1fr}}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tags span,.chip{border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:99px;font-size:15px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.filters button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 18px;border-radius:99px;font:500 15px "DM Sans",sans-serif;cursor:pointer}
+.filters button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{columns:3 320px;column-gap:20px}
+.card{break-inside:avoid;margin-bottom:20px;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;cursor:pointer;display:block;width:100%;text-align:left;padding:0;color:inherit;font:inherit}
+.card .im{height:var(--h,240px);overflow:hidden;background:var(--line)}
+.card img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .4s}
+.card:hover img{transform:scale(1.05)}
+.card div.t{padding:14px 18px 18px}.card h3{font-size:21px}.card small{color:var(--mute)}
+.card.hide{display:none}
+.tabs{display:grid;grid-template-columns:300px 1fr;gap:30px}@media(max-width:860px){.tabs{grid-template-columns:1fr}}
+.tl{display:flex;flex-direction:column;gap:10px}@media(max-width:860px){.tl{flex-direction:row;overflow-x:auto}}
+.tl button{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:16px 18px;border-radius:16px;cursor:pointer;font:inherit;min-width:220px}
+.tl button.on{background:var(--y);color:var(--on-y);border-color:var(--y)}
+.tl button small{display:block;opacity:.75}
+.pan{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px}
+.pan h3{font-size:28px;margin-bottom:4px}.pan li{margin:10px 0}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.sk div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.sk h3{font-size:22px;margin-bottom:6px}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:36px}@media(max-width:860px){.cg{grid-template-columns:1fr}}
+.cl a{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none;font-weight:500}
+.cl a:hover{color:var(--b)}
+form{display:grid;gap:12px}
+input,textarea{width:100%;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:13px 15px;font:inherit}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-size:15px}
+#top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;background:var(--y);color:var(--on-y);border:0;z-index:40}
+#top.show{opacity:1;pointer-events:auto}
+#lb{position:fixed;inset:0;background:rgba(8,10,16,.92);z-index:100;display:none;flex-direction:column}
+#lb.open{display:flex}
+.lbh{display:flex;gap:10px;align-items:center;padding:calc(12px + env(safe-area-inset-top,0px)) 18px 12px;color:#fff}
+.lbh h3{margin-right:auto;font-size:20px}.lbh .ic{background:#222836;color:#fff;border-color:#3a4256}
+.lbb{overflow:auto;flex:1;padding:0 18px 24px;text-align:center}
+.lbb img{max-width:min(100%,1000px);height:auto;border-radius:10px}
+.lbb p{color:#c5cbda;max-width:60ch;margin:14px auto}
+#rimg{width:100%;max-width:560px;border-radius:16px;border:1px solid var(--line);cursor:zoom-in;display:block}
+</style></head>
+<body>
+<div id="bar"></div>
+<header><div class="wrap"><nav id="nav">
+<a class="logo" href="#home"><b>MF</b>Mohammed Faizal</a>
+<a class="l" href="#about">About</a><a class="l" href="#work">Work</a><a class="l" href="#experience">Experience</a><a class="l" href="#resume">Resume</a><a class="l" href="#skills">Skills</a><a class="l" href="#contact">Contact</a>
+<button class="ic" id="theme" aria-label="Switch light or dark theme">◐</button>
+<button class="ic" id="menu" aria-label="Open menu">☰</button>
+</nav></div></header>
+
+<main id="home">
+<section id="hero" class="hero"><div class="wrap hg">
+<div>
+<h1>Mohammed Faizal</h1>
+<span class="role">Graphic & Visual Designer</span>
+<p>I design brands, social campaigns, print and video thumbnails for travel, food, construction and media businesses from Madurai, Tamil Nadu.</p>
+<div class="cta"><a class="btn" href="#work">See my work</a><a class="btn alt" href="#resume">View resume</a><a class="btn alt" href="#contact">Hire me</a></div>
+<div class="stats"><div><b>2+</b><span>years designing</span></div><div><b id="cnt">14</b><span>projects shown</span></div><div><b>3</b><span>studios & brands</span></div></div>
+</div>
+<div class="photo"><img data-i="profile" alt="Portrait of Mohammed Faizal"></div>
+</div>
+<div class="mq" aria-hidden="true"><div><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Premiere Pro</span><span>Affinity</span><span>Firefly</span><span>Midjourney</span><span>Runway</span><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Premiere Pro</span><span>Affinity</span><span>Firefly</span><span>Midjourney</span><span>Runway</span></div></div>
+</section>
+
+<section id="about"><div class="wrap ag">
+<div><h2>Design that sells the idea fast.</h2></div>
+<div><p>I’m a graphic and visual designer with 2+ years in media and digital marketing. I make social creatives, branding, print and campaign visuals, and I use AI tools to speed up ideas while keeping every piece on brand.</p>
+<p>I work well under tight deadlines, and I care about type, layout and detail.</p>
+<div class="tags"><span>Branding & logos</span><span>Social media</span><span>Print</span><span>Web UI</span><span>Thumbnails</span><span>Tamil & English layouts</span></div></div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<h2>Selected work</h2><p class="lead">Tap any project to view it full size.</p>
+<div class="filters" id="filters"></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2><p class="lead">Where I’ve worked, newest first.</p>
+<div class="tabs"><div class="tl" id="tl"></div><div class="pan" id="pan"></div></div>
+<p style="margin-top:30px"><b>Education:</b> B.Sc. Food Science and Nutrition, The American College (2019–2022) · Higher Secondary, Balamandhiram Hr. Sec. School (2017–2019)</p>
+</div></section>
+
+<section id="resume"><div class="wrap ag">
+<div><h2>Resume</h2><p class="lead">My full CV on one page: profile, experience, skills and education. Tap it to read full size.</p>
+<div class="cta"><button class="btn" id="rv">Open full size</button><a class="btn alt" href="https://www.linkedin.com/in/mohammed-faizal-164343420" target="_blank" rel="noopener">LinkedIn profile</a></div></div>
+<div><img id="rimg" data-i="resume" alt="Resume of Mohammed Faizal" tabindex="0"></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills & tools</h2><p class="lead">What I use every day.</p>
+<div class="sk">
+<div><h3>Design</h3><div class="tags"><span>Branding & logos</span><span>Social graphics</span><span>Typography & layout</span><span>UI elements & icons</span><span>Colour & hierarchy</span><span>Print design</span><span>Visual storytelling</span></div></div>
+<div><h3>Software</h3><div class="tags"><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Premiere Pro</span><span>Affinity</span></div></div>
+<div><h3>AI tools</h3><div class="tags"><span>Firefly & Generative Fill</span><span>Midjourney</span><span>ChatGPT / Gemini</span><span>Canva Magic Studio</span><span>Runway</span></div></div>
+<div><h3>Working style</h3><div class="tags"><span>Attention to detail</span><span>Time management</span><span>Problem-solving</span><span>Teamwork</span></div></div>
+</div>
+<p style="margin-top:26px;color:var(--mute)">Off the clock: photography, travel, gaming, sound design, cooking and journaling.</p>
+</div></section>
+
+<section id="contact"><div class="wrap cg">
+<div><h2>Let’s make something.</h2><p class="lead">Open to full-time roles and freelance projects.</p>
+<div class="cl">
+<a href="mailto:mohammedfaizaldesigner@mail.com">Email <span>mohammedfaizaldesigner@mail.com</span></a>
+<a href="tel:+917812860459">Phone <span>+91 78128 60459</span></a>
+<a href="https://www.behance.net/FAIZALMOHAMEED" target="_blank" rel="noopener">Behance <span>FAIZALMOHAMEED</span></a>
+<a href="https://www.linkedin.com/in/mohammed-faizal-164343420" target="_blank" rel="noopener">LinkedIn <span>mohammed-faizal</span></a>
+</div></div>
+<form id="f"><input id="n" placeholder="Your name" required aria-label="Your name"><input id="e" type="email" placeholder="Your email" required aria-label="Your email"><textarea id="m" rows="5" placeholder="Tell me about the project" required aria-label="Project details"></textarea><button class="btn" type="submit">Send by email</button></form>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Mohammed Faizal · Madurai, Tamil Nadu</div></footer>
+<button class="ic" id="top" aria-label="Back to top">↑</button>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Project viewer"><div class="lbh"><h3 id="lt"></h3><button class="ic" id="pv" aria-label="Previous project">←</button><button class="ic" id="nx" aria-label="Next project">→</button><button class="ic" id="cl" aria-label="Close">✕</button></div><div class="lbb" id="lbb"></div></div>
+
+<script>
+const I={"adhithya":"images/adhithya.jpg","adhsocial":"images/adhsocial.jpg","bottle":"images/bottle.jpg","brochure":"images/brochure.jpg","burger":"images/burger.jpg","camp":"images/camp.jpg","childday":"images/childday.jpg","coffee":"images/coffee.jpg","covers":"images/covers.jpg","depart":"images/depart.jpg","grid":"images/grid.jpg","insta1":"images/insta1.jpg","insta2":"images/insta2.jpg","insta3":"images/insta3.jpg","menu":"images/menu.jpg","menuflat":"images/menuflat.jpg","mg1":"images/mg1.jpg","mg2":"images/mg2.jpg","mg3":"images/mg3.jpg","mobmock":"images/mobmock.jpg","offer":"images/offer.jpg","planet":"images/planet.jpg","politics":"images/politics.jpg","profile":"images/profile.jpg","resume":"images/resume.jpg","sb":"images/sb.jpg","scandi":"images/scandi.jpg","services":"images/services.jpg","social":"images/social.jpg","spgrid":"images/spgrid.jpg","spservices":"images/spservices.jpg","thumbs":"images/thumbs.jpg","web":"images/web.jpg","webmock":"images/webmock.jpg"};
+document.querySelectorAll('[data-i]').forEach(e=>e.src=I[e.dataset.i]);
+const P=[
+["Amazing Europe brochure","Print","brochure","Fixed-departure tour brochure for Sky Planet Holidays, with day-wise itineraries.",240],
+["Scandinavia brochure spread","Print","scandi","Itinerary spread with aurora imagery and angled layout.",200],
+["Bummy Burger menu","Print","menuflat","Food menu with price grid, photo strip and QR contact block.",340],
+["Sky Planet website UI","Web","web","Homepage design for a worldwide tour operator.",340],
+["Sky Planet web mockup","Web","webmock","The homepage shown on a laptop mockup.",200],
+["Women’s Day & hiring posts","Social","social","Festival and recruitment creatives for Sky Planet.",200],
+["Adhithya Catering identity","Branding","adhithya","Logo, stationery, uniform, signage and colour palette.",380],
+["Kathija’s Coffee Powder","Branding","coffee","Pouch packaging, cup and brand layout.",380],
+["Social Planet logo","Branding","planet","Logo concept, pattern and signage for a digital marketing brand.",380],
+["Reel & YouTube thumbnails","Thumbnails","thumbs","Thumbnails for travel series and itineraries.",380],
+["News & documentary thumbnails","Thumbnails","politics","High-impact thumbnails for politics and world-affairs videos.",380],
+["SB Construction campaign","Social","sb","Tamil and English social posts for a construction firm.",300],
+["Adhitya Catering social posts","Social","adhsocial","Instagram feed designs with Tamil typography.",200],
+["Multi-brand campaigns","Social","grid","Fourkart, SB Construction, Vishwas and Social Planet hiring posts.",300],
+["Vishwas special offer flyer","Print","offer","Product offer flyer for a kitchen and interiors store.",340],
+["Rio Hospital specialty camp","Social","camp","Paediatric camp poster with appointment details and services.",340],
+["Rio Hospital Children’s Day","Social","childday","Children’s Day greeting creative for a hospital brand.",340],
+["Jewellery heist thumbnail","Thumbnails","mg1","Tamil news-story thumbnail with a bold two-line headline.",200],
+["Case-series thumbnail","Thumbnails","mg2","Part-based Tamil thumbnail with a map backdrop and split portraits.",200],
+["Unsolved mystery thumbnail","Thumbnails","mg3","English mystery thumbnail with archival photo and callout.",200],
+["Monthly departures spread","Print","depart","Magazine spread listing monthly tour departures.",200],
+["Sky Planet brochure covers","Print","covers","Cover designs for the Sky Planet Holidays brochure.",200],
+["Bummy Burger sauce label","Branding","bottle","Bottle label and neck design on a repeating type background.",340],
+["Bummy Burger menu mockup","Print","menu","Table-stand menu shown in a restaurant scene.",200],
+["Chilli Cheese Burger ad","Social","burger","Offer post with discount and free-delivery callouts.",340],
+["Sky Planet mobile mockups","Web","mobmock","Destination and home pages shown on phone mockups.",200],
+["Sky Planet Instagram feed","Social","insta1","Anniversary, Women’s Day and destination posts in the profile feed.",200],
+["Destinations: Egypt, Russia, Malaysia","Social","insta2","Destination creatives with package details.",200],
+["Destinations: Japan, Russia, Europe","Social","insta3","Departure-date posts for Asia and Europe tours.",200],
+["Sky Planet post collection","Social","spgrid","Destination, visa, hiring and customer-trip posts.",300],
+["Social Planet service posts","Social","spservices","Offers for logo, poster, Google Ads and internship posts.",300],
+["Graphic design services package","Social","services","Promotional creative listing design services.",340]
+];
+const $=s=>document.querySelector(s),g=$('#grid');
+$('#cnt').textContent=P.length;
+g.innerHTML=P.map((p,i)=>`<button class="card" data-c="${p[1]}" data-k="${i}" style="--h:${p[4]}px"><div class="im"><img src="${I[p[2]]}" alt="${p[0]}" loading="lazy"></div><div class="t"><h3>${p[0]}</h3><small>${p[1]}</small></div></button>`).join('');
+const cats=['All',...new Set(P.map(p=>p[1]))];
+$('#filters').innerHTML=cats.map((c,i)=>`<button class="${i?'':'on'}">${c}</button>`).join('');
+$('#filters').onclick=e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#filters button').forEach(x=>x.classList.toggle('on',x===b));g.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',b.textContent!='All'&&c.dataset.c!=b.textContent))};
+let cur=0;
+const vis=()=>[...g.querySelectorAll('.card:not(.hide)')].map(c=>+c.dataset.k);
+function show(i){cur=i;$('#pv').style.display=$('#nx').style.display='';const p=P[i];$('#lt').textContent=p[0];$('#lbb').innerHTML=`<img src="${I[p[2]]}" alt="${p[0]}"><p>${p[3]}</p>`;$('#lbb').scrollTop=0;$('#lb').classList.add('open');document.body.style.overflow='hidden'}
+function step(d){const v=vis(),j=(v.indexOf(cur)+d+v.length)%v.length;show(v[j])}
+function showR(){$('#lt').textContent='Resume';$('#lbb').innerHTML=`<img src="${I.resume}" alt="Resume of Mohammed Faizal">`;$('#lbb').scrollTop=0;$('#pv').style.display=$('#nx').style.display='none';$('#lb').classList.add('open');document.body.style.overflow='hidden'}
+$('#rv').onclick=showR;$('#rimg').onclick=showR;$('#rimg').onkeydown=e=>{if(e.key=='Enter')showR()};
+g.onclick=e=>{const c=e.target.closest('.card');if(c)show(+c.dataset.k)};
+$('#cl').onclick=close=()=>{$('#lb').classList.remove('open');document.body.style.overflow=''};
+$('#pv').onclick=()=>step(-1);$('#nx').onclick=()=>step(1);
+addEventListener('keydown',e=>{if(!$('#lb').classList.contains('open'))return;if(e.key=='Escape')$('#cl').click();if(e.key=='ArrowLeft')step(-1);if(e.key=='ArrowRight')step(1)});
+const X=[
+["Visual Designer","Behindwoods, Chennai","Oct 2025 – Oct 2026",["Designed social media creatives, promotional campaigns and digital content for a media brand","Developed branding materials and campaign visuals aligned with brand identity","Delivered high-volume design work under tight publishing deadlines"]],
+["Graphic Designer","Sky Planet Holidays & Social Planet","Jul 2024 – Sep 2025",["Produced social graphics, promotional creatives and marketing collateral for travel and social media brands","Created flyers, brochures, posters and other print and digital designs"]],
+["Graphic Designer","Ask Eva","Mar 2024 – Jun 2024",["Designed social media graphics and marketing visuals for the brand"]]];
+$('#tl').innerHTML=X.map((x,i)=>`<button class="${i?'':'on'}" data-x="${i}"><b>${x[1]}</b><small>${x[2]}</small></button>`).join('');
+const px=i=>{const x=X[i];$('#pan').innerHTML=`<h3>${x[0]}</h3><p style="color:var(--mute);margin:0">${x[1]} · ${x[2]}</p><ul>${x[3].map(t=>`<li>${t}</li>`).join('')}</ul>`};px(0);
+$('#tl').onclick=e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#tl button').forEach(x=>x.classList.toggle('on',x===b));px(+b.dataset.x)};
+const nav=$('#nav');$('#menu').onclick=()=>nav.classList.toggle('open');nav.onclick=e=>{if(e.target.matches('a.l'))nav.classList.remove('open')};
+const links=[...document.querySelectorAll('a.l')],secs=links.map(a=>$(a.getAttribute('href')));
+function sc(){const h=document.documentElement,y=scrollY,t=h.scrollHeight-innerHeight;$('#bar').style.width=(t>0?y/t*100:0)+'%';$('#top').classList.toggle('show',y>600);let k=-1;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<innerHeight*.4)k=i});links.forEach((a,i)=>a.classList.toggle('on',i==k))}
+addEventListener('scroll',sc,{passive:true});sc();
+$('#top').onclick=()=>scrollTo({top:0});
+$('#theme').onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme=='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=d?'light':'dark'};
+$('#f').onsubmit=e=>{e.preventDefault();location.href=`mailto:mohammedfaizaldesigner@mail.com?subject=${encodeURIComponent('Project enquiry from '+$('#n').value)}&body=${encodeURIComponent($('#m').value+'\n\n'+$('#n').value+' ('+$('#e').value+')')}`};
+</script></body></html>
